@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound/NotFound";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Header from "./pages/shared/Header/Header";
 import Products from "./pages/shop/Products/Products";
+import Team from "./pages/Team/Team";
 
 function App() {
   return (
@@ -18,16 +19,20 @@ function App() {
           <Route exact path="/">
             <Home></Home>
           </Route>
-          <Route path="/home">
+          <Route exact path="/home">
             <Home></Home>
           </Route>
-          <Route path="/shop">
+          <Route exact path="/shop">
             <Products></Products>
           </Route>
-          <Route path="/login">
+          <Route exact path="/jointeam">
+            <Team></Team>
+          </Route>
+
+          <Route exact path="/login">
             <Login></Login>
           </Route>
-          <Route path="*">
+          <Route exact path="*">
             <NotFound></NotFound>
           </Route>
         </Switch>

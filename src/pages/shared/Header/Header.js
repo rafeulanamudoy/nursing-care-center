@@ -38,16 +38,16 @@ const Header = () => {
             <Nav.Link className="fw-bold fs-5 " as={HashLink} to="/shop">
               Shop
             </Nav.Link>
-            <Nav.Link className="fw-bold fs-5  " as={HashLink} to="/Team">
-              Team
+            <Nav.Link className="fw-bold fs-5  " as={HashLink} to="/jointeam">
+              JoinTeam
             </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link className="fw-bold fs-5 " as={Link} to="/login">
-              Login
+            <Nav.Link className="fw-bold fs-5 " as={Link} to="/register">
+              Register
             </Nav.Link>
-            <Nav.Link className="fw-bold fs-5  " as={Link} to="/logout">
-              Logout
+            <Nav.Link className="fw-bold fs-5  " as={Link} to="/login">
+              Login
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

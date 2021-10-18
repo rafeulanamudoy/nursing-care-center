@@ -1,0 +1,19 @@
+.jointeam {
+  background-image: url("../../images/JoinTeam/jointeam4.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  width: 100vw;
+}
+.join-text-style {
+  margin-top: 70px;
+  font-size: 80px;
+}
+.team-text-style {
+  font-size: 130px;
+  color: rgb(243, 98, 62);
+}
+.head-text-style {
+  font-size: 50px;
+  color: rgb(195, 188, 191);
+}
