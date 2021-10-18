@@ -1,0 +1,40 @@
+[
+    {
+      "id": 1,
+      "serviceName": "HOME NURSING CARE",
+      "desc": "Home nursing services encompasses a wide range of healthcare services that can be easily administered at your home. Home care nursing services are usually cheaper than hospitals and nursing homes",
+      "img": "https://image.freepik.com/free-vector/nursing-home-concept-illustration_114360-2816.jpg"
+
+    },
+    {
+      "id": 2,
+      "serviceName": "RENT OXYGEN CYLINDER",
+      "desc": "Baby Care Support in Dhaka Bangladesh otherwise known as day care, is the care and supervision of a child or multiple children at a time, whose ages range from six weeks to thirteen years.",
+      "img": "https://image.freepik.com/free-vector/oxygen-mask-concept-illustration_114360-6715.jpg"
+    },
+    {
+      "id": 3,
+      "serviceName": "GERIATRIC SENIOR CARE",
+      "desc": "Home Elderly Care,One of the aims of elderly care is to help elderly people and those with disabilities live normal, independent lives. This includes living in their own homes as long as possible",
+      "img": "https://image.freepik.com/free-vector/volunteers-helping-elderly-people_23-2148554195.jpg"
+    },
+    {
+      "id": 4,
+      "serviceName": "BABY CARE SUPPORT",
+      "desc": "Oxygen Cylinder Rental Rate, Weekly: 3000 Tk, Monthly: 6000 Tk, Home Delivery & Cylinder refill: 700 Tk, Oxygen  cylinder Linde BOC set selling price: 20000 tk, Medical Oxygen cylindeChinar  all set selling price: 15000 Tk",
+      "img": "https://image.freepik.com/free-vector/mom-with-kids-during-walk-park-nature-background-flat-vector-illustration_98292-8326.jpg"
+    },
+
+    {
+      "id": 5,
+      "serviceName": "HOSPITAL ATTENDANTS",
+      "desc": "There are times when constant care and attention is required at home for your loved one. There are measure many instances once all you wish may be a help reception for taking care of daily wants of your older",
+      "img": "https://image.freepik.com/free-vector/oncologic-pediatric-ward-with-male-nurse-attending-2-kids-after-cancer-treatment-horizontal-isometric-composition_1284-62518.jpg"
+    },
+    {
+      "id": 6,
+      "serviceName": "CRITICAL CARE NURSING",
+      "desc": "Our home care nursing services provide support for people in many ways ranging from a one hour visit to 24 hour live-in care. We provide on demand visiting nurses, personal or private nurse at home",
+      "img": "https://image.freepik.com/free-vector/medical-doctor-nurse-bottle_24908-7260.jpg"
+    }
+  ]

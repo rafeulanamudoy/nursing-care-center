@@ -1,0 +1,16 @@
+.logo {
+  width: 70px;
+  height: 68px;
+}
+
+.nav-link {
+  border: 3px solid rgb(142, 116, 177);
+  padding: 2px;
+  margin: 3px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgb(43, 2, 63);
+}
+.nav-container {
+  opacity: 0.9;
+}
