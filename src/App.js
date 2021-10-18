@@ -9,6 +9,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Header from "./pages/shared/Header/Header";
 import Products from "./pages/shop/Products/Products";
 import Team from "./pages/Team/Team";
+import Registration from "./pages/authentication/Registration/Registration";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route exact path="/jointeam">
             <Team></Team>
+          </Route>
+          <Route exact path="/register">
+            <Registration></Registration>
           </Route>
 
           <Route exact path="/login">

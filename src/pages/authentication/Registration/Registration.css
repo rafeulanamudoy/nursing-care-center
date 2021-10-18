@@ -1,0 +1,46 @@
+.register-form {
+  border: 2px solid green;
+  border-radius: 20px;
+  background-color: white;
+  width: 40vw;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 65px;
+}
+
+input[type="password"],
+input[type="email"] {
+  width: 70%;
+  padding: 7px;
+  margin-top: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+}
+
+.button-style {
+  display: block;
+  background-color: rgb(156, 90, 147);
+  border-radius: 8px;
+  border: 2px solid white;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  font-weight: 800;
+  color: white;
+  line-height: 40px;
+}
+@media only screen and (max-width: 600px) {
+  .button-style {
+    font-weight: 600;
+    font-size: small;
+    width: 45%;
+  }
+  .register-form {
+    width: 60vw;
+  }
+}
