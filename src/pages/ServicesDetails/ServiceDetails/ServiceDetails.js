@@ -5,13 +5,6 @@ import SingleDetails from "../SingleDetails/SingleDetails";
 import "./ServiceDetails.css";
 const ServiceDetails = () => {
   const { serviceId } = useParams();
-  const [serviceDetails, setServiceDetails] = useState([]);
-
-  useEffect(() => {
-    fetch("https://rafeulanamudoy.github.io/fakeservicedetail/fakeservice.json")
-      .then((res) => res.json())
-      .then((data) => setServiceDetails(data));
-  }, []);
 
   return (
     <div>
