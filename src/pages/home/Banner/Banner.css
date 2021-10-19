@@ -2,6 +2,17 @@
   height: 100vh;
   width: 100vw;
 }
+.carousel-caption {
+  color: black;
+
+  text-align: center;
+}
+.carousel-caption {
+  transform: translateY(-50%);
+  bottom: initial;
+  top: 30%;
+  color: red;
+}
 
 @media only screen and (max-width: 600px) {
   .img-size {

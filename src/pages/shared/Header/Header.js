@@ -1,11 +1,13 @@
 import React from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Button, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import useAuth from "../../../hooks/useAuth";
 import logo from "../../../images/Logo/logo.jpg";
 import "./Header.css";
 
 const Header = () => {
+  const { user, logOut } = useAuth();
   return (
     <Navbar
       className="nav-container  "
@@ -43,12 +45,33 @@ const Header = () => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link className="fw-bold fs-5 " as={Link} to="/register">
-              Register
-            </Nav.Link>
-            <Nav.Link className="fw-bold fs-5  " as={Link} to="/login">
-              Login
-            </Nav.Link>
+            {!user.email && (
+              <Nav.Link className="fw-bold fs-5 " as={Link} to="/register">
+                Register
+              </Nav.Link>
+            )}
+
+            {user?.email ? (
+              <button
+                className="logout-button-style fw-bold fs-5"
+                onClick={logOut}
+              >
+                {" "}
+                Log Out
+              </button>
+            ) : (
+              <Nav.Link className="fw-bold fs-5  " as={Link} to="/login">
+                Login
+              </Nav.Link>
+            )}
+
+            <Navbar.Text>
+              {user?.email && (
+                <span>
+                  Login in as: <a href="#login">{user?.displayName}</a>
+                </span>
+              )}
+            </Navbar.Text>
           </Nav>
         </Navbar.Collapse>
       </Container>

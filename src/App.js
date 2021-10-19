@@ -11,37 +11,46 @@ import Products from "./pages/shop/Products/Products";
 import Team from "./pages/Team/Team";
 import Registration from "./pages/authentication/Registration/Registration";
 
+import AuthProvider from "./contexts/AuthProvider";
+import PrivateRoute from "./pages/authentication/PrivateRoute/PrivateRoute";
+import ServiceDetails from "./pages/ServicesDetails/ServiceDetails/ServiceDetails";
+
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Header></Header>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route exact path="/home">
-            <Home></Home>
-          </Route>
-          <Route exact path="/shop">
-            <Products></Products>
-          </Route>
-          <Route exact path="/jointeam">
-            <Team></Team>
-          </Route>
-          <Route exact path="/register">
-            <Registration></Registration>
-          </Route>
+      <AuthProvider>
+        <BrowserRouter>
+          <Header></Header>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route exact path="/home">
+              <Home></Home>
+            </Route>
+            <PrivateRoute exact path="/shop">
+              <Products></Products>
+            </PrivateRoute>
+            <Route exact path="/jointeam">
+              <Team></Team>
+            </Route>
+            <Route exact path="/register">
+              <Registration></Registration>
+            </Route>
 
-          <Route exact path="/login">
-            <Login></Login>
-          </Route>
-          <Route exact path="*">
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </BrowserRouter>
+            <Route exact path="/login">
+              <Login></Login>
+            </Route>
+            <PrivateRoute path="/service/:serviceId">
+              <ServiceDetails></ServiceDetails>
+            </PrivateRoute>
+            <Route exact path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }

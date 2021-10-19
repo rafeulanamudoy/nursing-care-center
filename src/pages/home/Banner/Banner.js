@@ -10,9 +10,17 @@ const Banner = () => {
     <Carousel>
       <Carousel.Item interval={1000}>
         <img className="d-block  img-size " src={banner1} alt="First slide" />
+
+        <Carousel.Caption className="carousel-caption">
+          <h3 className="  text-danger fw-bold">Nursing Care Center</h3>
+        </Carousel.Caption>
       </Carousel.Item>
+
       <Carousel.Item interval={500}>
         <img className="d-block img-size   " src={banner2} alt="Second slide" />
+        <Carousel.Caption className="carousel-caption">
+          <h3 className="  text-danger fw-bold">Nursing Care Center</h3>
+        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -20,6 +28,9 @@ const Banner = () => {
           src={banner3}
           alt="Third slide"
         />
+        <Carousel.Caption className="carousel-caption">
+          <h3 className="   text-danger fw-bold">Nursing Care Center</h3>
+        </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );
