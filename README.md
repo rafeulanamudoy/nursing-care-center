@@ -1,6 +1,6 @@
 # Nursing Care Center
 
-Project Link [ Cooking School](https://nursing-care-f2dfb.web.app).
+Project Link [ Nursing Care Center](https://nursing-care-f2dfb.web.app).
 
 ## our site will help:
 
