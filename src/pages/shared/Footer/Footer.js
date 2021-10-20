@@ -6,10 +6,10 @@ const Footer = () => {
     <div>
       <footer id="footer">
         <h2>
-          <span className="color"> Cooking</span> School
+          <span className="color"> Nursing Care</span> School
         </h2>
 
-        <h4>Eat Healthy To Leave Healthy.Live Healthy To Leave Happy</h4>
+        <h4>Caring is the essence of nursing.</h4>
 
         <p> © Rafeul Anam Udoy 2021.A programming iniative</p>
       </footer>

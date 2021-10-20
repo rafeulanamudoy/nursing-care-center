@@ -1,12 +1,15 @@
 import React from "react";
+import "./SingleDetails.css";
 
 const SingleDetails = (props) => {
-  console.log(props);
-  const { serviceName } = props.singleService;
+  const { serviceName, desc, img } = props?.singleService;
+
   return (
-    <div>
-      <img src="" />
-      <h1>{serviceName}</h1>
+    <div className="single-service-container d-block mx-auto">
+      <img className="single-service-container" src={img} />
+      <h5 className="text-center text-success">{serviceName}</h5>
+      <p className="single-service-desc ">{desc}</p>
+
       <p></p>
     </div>
   );
